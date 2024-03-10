@@ -20,7 +20,7 @@ public class DbConnection {
         Connection conn = null;
         
         try {
-            String url = "jdbc:mysql://localhost:3306/hospital?user=root&password=";
+            String url = "jdbc:mysql://localhost:3306/hospital?user=root&password=Mysqlp@ssword2024";
             conn = DriverManager.getConnection(url);
         } catch (SQLException error) {
             JOptionPane.showMessageDialog(null, "DbConnection" + error.getMessage());

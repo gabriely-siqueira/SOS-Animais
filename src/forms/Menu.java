@@ -65,7 +65,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(DeskPanelLayout.createSequentialGroup()
                 .addGap(45, 45, 45)
                 .addComponent(jLabel1)
-                .addContainerGap(389, Short.MAX_VALUE))
+                .addContainerGap(370, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -81,12 +81,12 @@ public class Menu extends javax.swing.JFrame {
 
         jMenuBar1.setBackground(new java.awt.Color(87, 109, 61));
 
-        jMenu1.setIcon(new javax.swing.ImageIcon("C:\\hospital\\src\\images\\menu.png")); // NOI18N
+        jMenu1.setIcon(new javax.swing.ImageIcon("C:\\sos\\src\\images\\menu.png")); // NOI18N
         jMenu1.setPreferredSize(new java.awt.Dimension(50, 50));
 
         jMenuItem1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         jMenuItem1.setForeground(new java.awt.Color(0, 0, 0));
-        jMenuItem1.setIcon(new javax.swing.ImageIcon("C:\\hospital\\src\\images\\doctor.png")); // NOI18N
+        jMenuItem1.setIcon(new javax.swing.ImageIcon("C:\\sos\\src\\images\\doctor.png")); // NOI18N
         jMenuItem1.setText("Médico");
         jMenuItem1.setPreferredSize(new java.awt.Dimension(105, 30));
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
@@ -105,7 +105,7 @@ public class Menu extends javax.swing.JFrame {
 
         jMenuItem3.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         jMenuItem3.setForeground(new java.awt.Color(0, 0, 0));
-        jMenuItem3.setIcon(new javax.swing.ImageIcon("C:\\hospital\\src\\images\\appointment.png")); // NOI18N
+        jMenuItem3.setIcon(new javax.swing.ImageIcon("C:\\sos\\src\\images\\appointment.png")); // NOI18N
         jMenuItem3.setText("Consulta");
         jMenuItem3.setPreferredSize(new java.awt.Dimension(105, 30));
         jMenu1.add(jMenuItem3);
@@ -119,14 +119,14 @@ public class Menu extends javax.swing.JFrame {
 
         jMenuItem5.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         jMenuItem5.setForeground(new java.awt.Color(0, 0, 0));
-        jMenuItem5.setIcon(new javax.swing.ImageIcon("C:\\hospital\\src\\images\\configuration.png")); // NOI18N
+        jMenuItem5.setIcon(new javax.swing.ImageIcon("C:\\sos\\src\\images\\configuration.png")); // NOI18N
         jMenuItem5.setText("Configurações");
         jMenuItem5.setPreferredSize(new java.awt.Dimension(105, 30));
         jMenu1.add(jMenuItem5);
 
         jMenuItem6.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         jMenuItem6.setForeground(new java.awt.Color(0, 0, 0));
-        jMenuItem6.setIcon(new javax.swing.ImageIcon("C:\\hospital\\src\\images\\exit.png")); // NOI18N
+        jMenuItem6.setIcon(new javax.swing.ImageIcon("C:\\sos\\src\\images\\exit.png")); // NOI18N
         jMenuItem6.setText("Sair");
         jMenuItem6.setPreferredSize(new java.awt.Dimension(105, 30));
         jMenu1.add(jMenuItem6);
@@ -134,7 +134,7 @@ public class Menu extends javax.swing.JFrame {
         jMenuBar1.add(jMenu1);
 
         jMenu3.setForeground(new java.awt.Color(0, 0, 0));
-        jMenu3.setIcon(new javax.swing.ImageIcon("C:\\hospital\\src\\images\\dog.png")); // NOI18N
+        jMenu3.setIcon(new javax.swing.ImageIcon("C:\\sos\\src\\images\\dog.png")); // NOI18N
         jMenu3.setText("SOS ANIMAIS");
         jMenu3.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jMenu3.addActionListener(new java.awt.event.ActionListener() {
