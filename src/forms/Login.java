@@ -4,8 +4,9 @@
  */
 package forms;
 
-import DAO.UserDAO;
-import DTO.UserDTO;
+//import DAO.UserDAO;
+//import DTO.UserDTO;
+import hospital1.Data;
 import java.util.Arrays;
 import javax.swing.JOptionPane;
 import java.sql.*;
@@ -221,9 +222,9 @@ public class Login extends javax.swing.JFrame {
                         .addGap(67, 67, 67)
                         .addComponent(jLabel1)
                         .addGap(29, 29, 29)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(userTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(userTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(passwordTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -261,48 +262,64 @@ public class Login extends javax.swing.JFrame {
 
     private void loginBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginBtnActionPerformed
         // LOGIN BUTTON
-        String user = userTxt.getText();
-        char[] passChars = passwordTxt.getPassword();
-
-        try {
-            // Validate user input (you may add more specific validation as needed)
-            if (user.isEmpty() || passChars.length == 0) {
-                JOptionPane.showMessageDialog(this, "Por favor digite o usuário e a senha.", "Input Error", JOptionPane.ERROR_MESSAGE);
-                userTxt.setText("");
-                passwordTxt.setText("");
-                userTxt.requestFocusInWindow();
-                return; // Exit the method if input is not valid
-            }
-            // Convert password char array to String
-            String password = new String(passChars);
-
-            UserDTO userDTO = new UserDTO();
-            userDTO.setAdmin(user);
-            userDTO.setPassword(password);
-
-            UserDAO userDAO = new UserDAO();
-            ResultSet rsUserDAO = userDAO.userAuthentication(userDTO);
-
-            if (rsUserDAO.next()) {
-                //BRING MENU PAGE
-                Menu menu = new Menu();
-                menu.setVisible(true);
-                menu.setExtendedState(JFrame.MAXIMIZED_BOTH);
-                this.dispose();
-
-            } else {
-                JOptionPane.showMessageDialog(null, "Usuário ou senha incorretos");
-                userTxt.setText("");
-                passwordTxt.setText("");
-                userTxt.requestFocusInWindow();
-            }
-
-        } catch (SQLException error) {
-            JOptionPane.showMessageDialog(null, "LOGIN" + error);
-        } finally {
-
-            Arrays.fill(passChars, ' ');
-        }
+       Data data = new Data();
+    Menu menu = new Menu();
+ 
+  if (!data.userValidation(userTxt.getText(), new String(passwordTxt.getPassword()))) {
+    JOptionPane.showMessageDialog(null, "Usuário ou senha incorretos");
+    userTxt.setText("");
+    passwordTxt.setText("");
+    userTxt.requestFocusInWindow();
+} else {
+    JOptionPane.showMessageDialog(null, "Login efetuado");
+    userTxt.setText("");
+    passwordTxt.setText(""); 
+    this.dispose();
+    menu.setExtendedState(JFrame.MAXIMIZED_BOTH); 
+    menu.setVisible(true);
+//        String user = userTxt.getText();
+//        char[] passChars = passwordTxt.getPassword();
+//
+//        try {
+//            // Validate user input (you may add more specific validation as needed)
+//            if (user.isEmpty() || passChars.length == 0) {
+//                JOptionPane.showMessageDialog(this, "Por favor digite o usuário e a senha.", "Input Error", JOptionPane.ERROR_MESSAGE);
+//                userTxt.setText("");
+//                passwordTxt.setText("");
+//                userTxt.requestFocusInWindow();
+//                return; // Exit the method if input is not valid
+//            }
+//            // Convert password char array to String
+//            String password = new String(passChars);
+//
+//            UserDTO userDTO = new UserDTO();
+//            userDTO.setAdmin(user);
+//            userDTO.setPassword(password);
+//
+//            UserDAO userDAO = new UserDAO();
+//            ResultSet rsUserDAO = userDAO.userAuthentication(userDTO);
+//
+//            if (rsUserDAO.next()) {
+//                //BRING MENU PAGE
+//                Menu menu = new Menu();
+//                menu.setVisible(true);
+//                menu.setExtendedState(JFrame.MAXIMIZED_BOTH);
+//                this.dispose();
+//
+//            } else {
+//                JOptionPane.showMessageDialog(null, "Usuário ou senha incorretos");
+//                userTxt.setText("");
+//                passwordTxt.setText("");
+//                userTxt.requestFocusInWindow();
+//            }
+//
+//        } catch (SQLException error) {
+//            JOptionPane.showMessageDialog(null, "LOGIN" + error);
+//        } finally {
+//
+//            Arrays.fill(passChars, ' ');
+//        }
+  }
     }//GEN-LAST:event_loginBtnActionPerformed
 
     /**
