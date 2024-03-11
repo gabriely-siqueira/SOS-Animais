@@ -36,7 +36,7 @@ public class Menu extends javax.swing.JFrame {
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
-        jMenuItem6 = new javax.swing.JMenuItem();
+        exitItem = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -124,12 +124,17 @@ public class Menu extends javax.swing.JFrame {
         jMenuItem5.setPreferredSize(new java.awt.Dimension(105, 30));
         jMenu1.add(jMenuItem5);
 
-        jMenuItem6.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jMenuItem6.setForeground(new java.awt.Color(0, 0, 0));
-        jMenuItem6.setIcon(new javax.swing.ImageIcon("C:\\sos\\src\\images\\exit.png")); // NOI18N
-        jMenuItem6.setText("Sair");
-        jMenuItem6.setPreferredSize(new java.awt.Dimension(105, 30));
-        jMenu1.add(jMenuItem6);
+        exitItem.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        exitItem.setForeground(new java.awt.Color(0, 0, 0));
+        exitItem.setIcon(new javax.swing.ImageIcon("C:\\sos\\src\\images\\exit.png")); // NOI18N
+        exitItem.setText("Sair");
+        exitItem.setPreferredSize(new java.awt.Dimension(105, 30));
+        exitItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                exitItemActionPerformed(evt);
+            }
+        });
+        jMenu1.add(exitItem);
 
         jMenuBar1.add(jMenu1);
 
@@ -168,6 +173,14 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenu3ActionPerformed
 
+    private void exitItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitItemActionPerformed
+        // EXIT BUTTON FROM NAVBAR
+        this.dispose();
+        var login = new Login();
+        login.setLocationRelativeTo(null);
+        login.setVisible(true);
+    }//GEN-LAST:event_exitItemActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -205,6 +218,7 @@ public class Menu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane DeskPanel;
+    private javax.swing.JMenuItem exitItem;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu3;
@@ -214,7 +228,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
