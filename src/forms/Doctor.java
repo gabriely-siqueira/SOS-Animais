@@ -6,7 +6,7 @@ package forms;
 
 /**
  *
- * @author foplg
+ * @author Gabriel
  */
 public class Doctor extends javax.swing.JFrame {
 

@@ -8,7 +8,7 @@ import forms.Login;
 
 /**
  *
- * @author Elisa
+ * @author Gabriely
  */
 public class Hospital {
 

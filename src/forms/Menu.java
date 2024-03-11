@@ -6,7 +6,7 @@ package forms;
 
 /**
  *
- * @author Elisa
+ * @author Gabriely
  */
 public class Menu extends javax.swing.JFrame {
 
