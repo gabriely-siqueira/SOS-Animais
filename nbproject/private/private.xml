@@ -3,12 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/sos/SOS-Animais/src/hospital1/Data.java</file>
-            <file>file:/C:/sos/SOS-Animais/src/DAO/DbConnection.java</file>
-            <file>file:/C:/sos/SOS-Animais/src/hospital1/Hospital.java</file>
-            <file>file:/C:/sos/SOS-Animais/src/forms/Doctor.java</file>
-            <file>file:/C:/sos/SOS-Animais/src/forms/Menu.java</file>
-            <file>file:/C:/sos/SOS-Animais/src/DTO/UserDTO.java</file>
+            <file>file:/C:/sos/src/forms/Login.java</file>
+            <file>file:/C:/sos/src/DAO/DbConnection.java</file>
+            <file>file:/C:/sos/src/forms/Menu.java</file>
         </group>
     </open-files>
 </project-private>
