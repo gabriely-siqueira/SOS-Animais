@@ -58,7 +58,6 @@ public class Login extends javax.swing.JFrame {
         setBackground(new java.awt.Color(204, 255, 204));
 
         jLabel7.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Esqueceu sua senha? ");
 
         jButton1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
@@ -87,12 +86,10 @@ public class Login extends javax.swing.JFrame {
 
         jLabel2.setBackground(new java.awt.Color(0, 0, 0));
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("SOS");
 
         jLabel3.setBackground(new java.awt.Color(0, 0, 0));
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("ANIMAIS");
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/forms/dog.png"))); // NOI18N
@@ -132,7 +129,6 @@ public class Login extends javax.swing.JFrame {
         );
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 28)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("LOGIN");
 
         loginBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/forms/arrow.png"))); // NOI18N
@@ -156,17 +152,12 @@ public class Login extends javax.swing.JFrame {
         );
 
         jLabel13.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel13.setIcon(new javax.swing.ImageIcon("C:\\sos\\src\\images\\user.png")); // NOI18N
         jLabel13.setText(" ");
 
         jLabel14.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel14.setIcon(new javax.swing.ImageIcon("C:\\sos\\src\\images\\password.png")); // NOI18N
         jLabel14.setText(" ");
 
         jLabel11.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("GG Sistemas");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
