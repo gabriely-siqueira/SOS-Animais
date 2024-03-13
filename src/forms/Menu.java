@@ -51,11 +51,13 @@ public class Menu extends javax.swing.JFrame {
 
         DeskPanel.setBackground(new java.awt.Color(216, 223, 197));
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Dialog", 1, 30)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("ADMIN | DASHBOARD");
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\sos\\src\\images\\team.png")); // NOI18N
         jLabel2.setText("jLabel2");
 
         jButton1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -65,48 +67,45 @@ public class Menu extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(35, 35, 35)
+                .addGap(46, 46, 46)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap(127, Short.MAX_VALUE)
+                .addGap(29, 29, 29)
                 .addComponent(jLabel2)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton1))
         );
 
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
 
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\sos\\src\\images\\animals.png")); // NOI18N
         jLabel3.setText("jLabel2");
 
         jButton2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jButton2.setText("Gerenciar Médicos");
+        jButton2.setText("Gerenciar Pacientes");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 238, Short.MAX_VALUE)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(51, 51, 51)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap(33, Short.MAX_VALUE)
+                .addContainerGap(40, Short.MAX_VALUE)
                 .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(30, 30, 30)
                 .addComponent(jButton2))
         );
 
@@ -120,45 +119,48 @@ public class Menu extends javax.swing.JFrame {
             DeskPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DeskPanelLayout.createSequentialGroup()
                 .addGap(103, 103, 103)
-                .addGroup(DeskPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(103, 103, 103)
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(938, Short.MAX_VALUE))
+                .addGroup(DeskPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addGroup(DeskPanelLayout.createSequentialGroup()
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(84, 84, 84)
+                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(951, Short.MAX_VALUE))
         );
         DeskPanelLayout.setVerticalGroup(
             DeskPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DeskPanelLayout.createSequentialGroup()
-                .addGap(26, 26, 26)
+                .addGap(87, 87, 87)
                 .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addGroup(DeskPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(654, Short.MAX_VALUE))
+                .addGap(30, 30, 30)
+                .addGroup(DeskPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(717, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addComponent(DeskPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 24, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(DeskPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 24, Short.MAX_VALUE))
         );
 
         jMenuBar1.setBackground(new java.awt.Color(87, 109, 61));
 
+        jMenu1.setIcon(new javax.swing.ImageIcon("C:\\sos\\src\\images\\menu.png")); // NOI18N
         jMenu1.setPreferredSize(new java.awt.Dimension(50, 50));
 
         jMenuItem1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jMenuItem1.setIcon(new javax.swing.ImageIcon("C:\\sos\\src\\images\\doctor.png")); // NOI18N
         jMenuItem1.setText("Médico");
         jMenuItem1.setPreferredSize(new java.awt.Dimension(105, 30));
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
@@ -175,6 +177,7 @@ public class Menu extends javax.swing.JFrame {
         jMenu1.add(jMenuItem2);
 
         jMenuItem3.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jMenuItem3.setIcon(new javax.swing.ImageIcon("C:\\sos\\src\\images\\appointment.png")); // NOI18N
         jMenuItem3.setText("Consulta");
         jMenuItem3.setPreferredSize(new java.awt.Dimension(105, 30));
         jMenu1.add(jMenuItem3);
@@ -186,11 +189,13 @@ public class Menu extends javax.swing.JFrame {
         jMenu1.add(jMenuItem4);
 
         jMenuItem5.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jMenuItem5.setIcon(new javax.swing.ImageIcon("C:\\sos\\src\\images\\configuration.png")); // NOI18N
         jMenuItem5.setText("Configurações");
         jMenuItem5.setPreferredSize(new java.awt.Dimension(105, 30));
         jMenu1.add(jMenuItem5);
 
         exitItem.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        exitItem.setIcon(new javax.swing.ImageIcon("C:\\sos\\src\\images\\exit.png")); // NOI18N
         exitItem.setText("Sair");
         exitItem.setPreferredSize(new java.awt.Dimension(105, 30));
         exitItem.addActionListener(new java.awt.event.ActionListener() {
@@ -202,6 +207,7 @@ public class Menu extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
+        jMenu3.setIcon(new javax.swing.ImageIcon("C:\\sos\\src\\images\\dog.png")); // NOI18N
         jMenu3.setText("SOS ANIMAIS");
         jMenu3.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jMenu3.addActionListener(new java.awt.event.ActionListener() {
