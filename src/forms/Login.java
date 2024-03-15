@@ -69,14 +69,14 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        userTxt.setBackground(new java.awt.Color(87, 109, 61));
+        userTxt.setBackground(new java.awt.Color(127, 148, 103));
         userTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 userTxtActionPerformed(evt);
             }
         });
 
-        passwordTxt.setBackground(new java.awt.Color(87, 109, 61));
+        passwordTxt.setBackground(new java.awt.Color(127, 148, 103));
         passwordTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 passwordTxtActionPerformed(evt);
